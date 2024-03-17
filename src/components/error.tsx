@@ -13,7 +13,7 @@ const Error = () => {
       }}
     >
       <Typography variant="h5">
-        {` This website haven't supported for mobile yet. Please try again using PC
+        {` This page haven't supported for mobile yet. Please try again using PC
         or Laptop.`}
         <br />
         {`Thank you`}
