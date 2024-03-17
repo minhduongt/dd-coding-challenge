@@ -22,13 +22,15 @@ Functions: Drag and drop components into the sample page, edit component propert
 ### **Things I have applied in this projects:**
 
 Architecture:
-
 > _Single-Page Application (SPA), Component-Based, Optimal Project Structure(components, hooks, types, etc)_
-> Design Pattern:
+
+Design Pattern:
 > _Custom Hooks, Higher-Order Components (HOCs), Render Props_
-> Principle:
+
+Principle:
 > _Separate logic from UI, Component Composition_
-> API & Libs:
+
+API & Libs:
 > _MUI, Axios, Local Storage, Context API_
 
 ## **How to run**
