@@ -17,6 +17,7 @@ Functions:
 > _Edit component properties or inline text_
 > _Upload image to firebase with back-end server api_
 > _Undo, redo, save to display on Consumer page, export sample page to download a txt file, import file from exporting_
+
 ![Otp.](/screenshots/admin.jpg)
 
 #### -Consumer page: view the page created by Admin
