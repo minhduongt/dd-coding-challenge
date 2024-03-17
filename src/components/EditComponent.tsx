@@ -13,6 +13,7 @@ type TEditComponentProps = {
 
 function EditComponent({ component, currentSelectIndex }: TEditComponentProps) {
   const [txt, setTxt] = useState("");
+  const [isUploading, setIsUploading] = useState(false);
   const { components, setComponents } = useComponentContext();
 
   const handleEditComponentProps = (
@@ -36,17 +37,24 @@ function EditComponent({ component, currentSelectIndex }: TEditComponentProps) {
   };
 
   const onUploadImage = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const formData = new FormData();
-    var file: File;
-    if (e.target.files) {
-      file = e.target.files[0];
-      if (file) {
-        formData.append("image", file);
-        const res = await imageApi.uploadImage(formData);
-        handleEditComponentProps(res.url, "imageUrl");
+    try {
+      setIsUploading(true);
+      const formData = new FormData();
+      var file: File;
+      if (e.target.files) {
+        file = e.target.files[0];
+        if (file) {
+          formData.append("image", file);
+          const res = await imageApi.uploadImage(formData);
+          handleEditComponentProps(res.url, "imageUrl");
+        }
       }
+      setTxt("");
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setIsUploading(false);
     }
-    setTxt("");
   };
 
   const getEditProps = () => {
@@ -89,8 +97,14 @@ function EditComponent({ component, currentSelectIndex }: TEditComponentProps) {
               value={components[currentSelectIndex].props?.imageUrl}
             />
             <Typography>{`Upload an image`}</Typography>
-            <Button component="label" role={undefined} tabIndex={-1}>
-              Upload
+
+            <Button
+              disabled={isUploading ? true : false}
+              component="label"
+              role={undefined}
+              tabIndex={-1}
+            >
+              {isUploading ? "Uploading..." : "Upload"}
               <VisuallyHiddenInput
                 type="file"
                 accept="image/*"
