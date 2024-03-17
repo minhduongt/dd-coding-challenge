@@ -1,29 +1,43 @@
 # Drag and Drop
+
 ## A React App with Next JS Framework And TypeScript
 
-------
+---
+
 ### **Overview pages**
 
-####-Home page:
-![Login.](/screenshots/home.png)
+#### -Home page:
 
-####-Admin page: Created a UI for Consumer page
-Functions: Drag and drop components into the sample page, edit component properties or inline text, uploade image to firebase with back-end server api, undo, redo, save to display on Consumer page, export sample page to download a txt file, import file from exporting.
-![Otp.](/screenshots/admin.png)
+![Login.](/screenshots/home.jpg)
 
-####-Consumer page: view the page created by Admin
-![Accounts.](/screenshots/consumer.png)
+#### -Admin page: Created a UI for Consumer page
+
+Functions: Drag and drop components into the sample page, edit component properties or inline text, upload image to firebase with back-end server api, undo, redo, save to display on Consumer page, export sample page to download a txt file, import file from exporting.
+![Otp.](/screenshots/admin.jpg)
+
+#### -Consumer page: view the page created by Admin
+
+![Accounts.](/screenshots/consumer.jpg)
 
 ### **Things I have applied in this projects:**
-Architecture: Single-Page Application (SPA), Component-Based, Optimal Project Structure(components, hooks, types, etc)
-Design Pattern: Custom Hooks, Higher-Order Components (HOCs), Render Props.
-Principle: Seperated logic from UI,  
-API & Libs: MUI, Axios, Local Storage, Context API
+
+Architecture:
+
+> _Single-Page Application (SPA), Component-Based, Optimal Project Structure(components, hooks, types, etc)_
+> Design Pattern:
+> _Custom Hooks, Higher-Order Components (HOCs), Render Props_
+> Principle:
+> _Separate logic from UI, Component Composition_
+> API & Libs:
+> _MUI, Axios, Local Storage, Context API_
 
 ## **How to run**
+
 Clone the project.
 Open the project with an IDE
+
 > _Require install Node version >= 16_
+
 ```
 npm install or yarn
 npm start or yarn start
