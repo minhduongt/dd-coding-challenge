@@ -12,7 +12,11 @@
 
 #### -Admin page: Created a UI for Consumer page
 
-Functions: Drag and drop components into the sample page, edit component properties or inline text, upload image to firebase with back-end server api, undo, redo, save to display on Consumer page, export sample page to download a txt file, import file from exporting.
+Functions: 
+>Drag and drop components into the sample page
+>Edit component properties or inline text
+>Upload image to firebase with back-end server api
+>Undo, redo, save to display on Consumer page, export sample page to download a txt file, import file from exporting.
 ![Otp.](/screenshots/admin.jpg)
 
 #### -Consumer page: view the page created by Admin
