@@ -54,4 +54,4 @@ npm start or yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-Or else you encounter a trouble to run locally, go to the [Deployement](https://dd-coding-challenge.vercel.app) to see the result easily.
+Or else you encounter a trouble to run locally, go to the [Deployment](https://dd-coding-challenge.vercel.app) to see the result easily.
