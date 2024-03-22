@@ -27,7 +27,7 @@ Functions:
 
 ![Accounts.](/screenshots/consumer.jpg)
 
-### **Things I have applied in this projects:**
+### **Things I have applied in this project:**
 
 Architecture:
 > _Single-Page Application (SPA), Component-Based, Optimal Project Structure(components, hooks, types, etc)_
